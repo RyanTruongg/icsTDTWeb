@@ -9,6 +9,7 @@ let timeMap = {
   "123-------------": "Ca1",
   "-------89012----": "Ca3-4",
   "-23456----------": "Ca1-2",
+  "12345----------": "Ca1-2",
   "------------345-": "Ca5"
 };
 
@@ -28,7 +29,7 @@ module.exports.writeIcs = async (token, hocky) => {
       console.log(period, schedule.period);
 
 
-      let _Date = new Date("2020-12-28T00:00:00");
+      let _Date = new Date("2021-06-07T00:00:00");
       _Date.setDate(_Date.getDate() + weekDay)
       weeks.forEach(week => {
         if (week != '-') {
